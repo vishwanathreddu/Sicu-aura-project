@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p2/2923747-connexion-reseau-mondial-carte-du-monde-composition-point-et-ligne-concept-de-illustrationle-entreprise-mondiale-gratuit-vectoriel.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .homecont nav{
+            width: 100%;
+            height: 10vh;
+            /* background-color: aqua; */
+        }
+        .homecont nav a{
+            color: white;
+            text-decoration: none;
+        }
+        .homecont nav img{
+            height: 70px;
+            width: 80px;
+            
+        }
+        .homecont nav div{
+            width: 60%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            font-size: 18px;
+            margin-top: -50px;
+            margin-left: 66vh;
+            /* background-color: bisque; */
+        }
+        .homecont .cont1 h1{
+            height: 20vh;
+            width: 40%;
+            font-size: 45px;
+            /* background-color: antiquewhite; */
+            position: absolute;
+            left: 20vh;
+            top: 30vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            letter-spacing: 5px;
+            line-height: 65px;
+        }
+        .homecont .cont1 h4{
+            height: 20vh;
+            width: 60%;
+            font-size: 19px;
+            position: absolute;
+            left: 20vh;
+            top: 60vh;
+            color: white;
+            letter-spacing: 2px;
+        }
+        /* .cont img{
+            width: 100%;
+            height:65vh;
+        } */
+        .homecont .anim{
+            height: 120vh;
+            width: 100%;
+            position: absolute;
+            top: 122vh;
+        }
+        .homecont .anim .bt{
+            position: absolute;
+            top: 10vh;
+        }
+        .homecont .anim .bt h1{
+            width: 40vh;
+            height: 15vh;
+            /* background-color: antiquewhite; */
+            font-size: 40px;
+            position: absolute;
+            left: 75vh;
+            top: -5vh;
+            color: white;
+        }
+        .homecont .anim .bt a{
+            position: absolute;
+            left: 29vh;
+            top: 10vh;
+            height: 50vh;
+            width: 50vh;
+        }
+        .homecont .anim .bt a .img2{
+            width: 30vh;
+            height: 35vh;
+            position: absolute;
+            left: -10vh;
+        }
+        .homecont .anim .bt a .img3{
+            width: 30vh;
+            height: 35vh;
+            position: absolute;
+            left: 45vh; 
+        }
+        .homecont .anim .bt a .img4{
+            width: 30vh;
+            height: 35vh;
+            position: absolute;
+            left: 100vh;
+        }
+        .homecont .anim .bt h4{
+            font-size: 60px;
+            position: absolute;
+            top: 55vh;
+            left: 20vh;
+            color: darkorange;
+        }
+        .homecont .anim .bt h3{
+            font-size: 60px;
+            position: absolute;
+            top: 55vh;
+            left: 75vh;
+            color: darkorange;
+        }
+        .homecont .anim .bt h2{
+            font-size: 60px;
+            position: absolute;
+            top: 55vh;
+            left: 130vh;
+            color: darkorange;
+        }
+        .content{
+            position: relative;
+        }
+        .content img{
+            height: 100vh;
+            width: 100%;
+            height: 90vh;
+        }
+        .lt{
+            position: absolute;
+            top: 35%;
+            left: 18px;
+            color: gray;
+            font-size: 25px;
+        }
+        .gt{
+            position: absolute;
+            top: 35%;
+            left: 97%;
+            color: gray;
+            font-size: 25px;
+        }
+        .circon{
+            position: absolute;
+            left: 46%;
+            top: 70%;
+            color: antiquewhite;
+        }
+        .circon .fa-solid{
+            color: bisque;
+            font-size: 20px;
+        }
+        .circon .fa-regular{
+            color: blanchedalmond;
+            font-size: 15px;
+        }
+        .homecont .info{
+            width: 100%;
+            height: 75vh;
+            position: absolute;
+            top: 212vh;
+            display: flex;
+            flex-direction: row;
+            background-color: darkblue;
+            font-size: 23px;
+            color: white;
+            letter-spacing: 2px;
+            line-height: 28px;
+            align-items: center;
+        }
+        .homecont .info img{
+            height: 55vh;
+            width: 30%;
+            position: absolute;
+            left: 8px;
+        }
+        .homecont .info div{
+            width: 65%;
+            height: auto;
+            position: absolute;
+            left: 62vh;
+            top: 10vh;
+        }
+        .homecont .info div .p1{
+            margin-top: 40px;
+        }
+        .homecont .info div .p2{
+            margin-top: 5vh;
+        }
+        .homecont .info div .p3{
+            margin-top: 5vh;
+        }
+        footer{
+            width: 90%;
+            height: 35vh;
+            display: grid;
+            grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr;
+            position: absolute;
+            top: 290vh;
+            left: 70px;
+            /* background-color: antiquewhite; */
+            font-size: 18px;
+            position: absolute;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        footer li{
+            list-style-type: none;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        footer ul{
+            font-size: 23px;
+        }
+        footer ul .line{
+            width: 60px;
+            height: 3px;
+            background-color: black;
+        }
+        footer p{
+            width: 90vh;
+            height: 5vh;
+            font-size: 14px;
+            position: absolute;
+            left: 55vh;
+            top: 34vh;
+        }
+        footer .icons a{
+            font-size: 20px;
+            color: black;
+            margin: 10px;
+        }
+        footer .icons a:hover{
+            font-size: 23px;
+        }
+        footer .icons p{
+            font-size: 21px;
+            position: absolute;
+            left: 9vh;
+            top: 25vh;
+        }
+        footer .icons .line{
+            width: 60px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            top: 29vh;
+            left: 9vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="homecont">
+        <nav>
+            <a href="index.html"><img src="sicu-aura_logo.png"/></a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="Directors.html">Directors</a>
+                <a href="Statistics.html">Statistics</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Career.html">Career</a>
+                <a href="About.html">About us</a>
+            </div>
+        </nav>
+        <div class="cont1">
+            <h1>We're Here To Give <br> Protection To You <br> And Your Family</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur.Tempor denec vestibulum <br> pellen tesque sollicitudin nunc odio sed</h4>
+        </div>
+        <div class="anim">
+            <div class="content">
+                <img src="https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?cs=srgb&dl=cold-snow-landscape-858115.jpg&fm=jpg" class="img1"/>
+                
+            </div>
+            <div class="lt" onclick="decr()"><i class="fa-solid fa-less-than"></i></div>
+            <div class="gt" onclick="incr()"><i class="fa-solid fa-greater-than"></i></div>
+            <div class="bt">
+                <h1>Follow us on </h1>
+                    <a href="https://twitter.com/SicuAura"><img src="https://th.bing.com/th/id/OIP.H836RvDYYgQZcZn0TC8qBAHaHa?pid=ImgDet&rs=1" alt="" class="img2">  </a>
+                    <h4>Twitter</h4>
+                    <a href="https://www.linkedin.com/company/sicu-aura/"><img src="https://th.bing.com/th/id/OIP.WU_zii6f3qv00VT7HEJ1lQHaHa?pid=ImgDet&w=202&h=202&c=7&dpr=1.3" alt="" class="img3" ></a>
+                    <h3>linkedIn</h3>
+                    <a href="https://www.facebook.com/people/Sicu-aura/100092369332099/?mibextid=LQQJ4d"><img src="https://th.bing.com/th/id/OIP.FQYyu80e7eHzc3lbL4BzBQAAAA?pid=ImgDet&rs=1" alt="" class="img4"></a>
+                    <h2>Facebook</h2>
+            </div>
+            <div class="circon">
+                <i class="fa-solid fa-circle" onclick="fun1(0)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(1)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(2)"></i>
+                <!-- <i class="fa-regular fa-circle" onclick="fun1(3)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(4)"></i> -->
+            </div>
+        </div>
+        <script>
+            let arr=["https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?cs=srgb&dl=cold-snow-landscape-858115.jpg&fm=jpg","https://live.staticflickr.com/5022/5601847905_2f1c8d1a51.jpg","https://cdnfl01.viewbug.com/media/mediafiles/2015/05/02/54530411_large.jpg"]
+            // ,"https://i.pinimg.com/originals/d4/b7/cb/d4b7cb831c9eeed2ab27bc9aeec9e367.jpg","https://img.swimbarbadosvacations.com/can-you-take-water-into-isotopes-park-.jpg"
+            let hd = ["Follow Us On"]
+            let d = ["linkedIn","Facebook"]
+            let i=0
+            let cr=document.getElementsByClassName('fa-circle')
+            function incr()
+            {
+                cr[i].className='fa-regular fa-circle'
+                i++
+                if(i>=3)
+                {
+                    i=0
+                }
+                document.getElementsByTagName("img")[1].src=arr[i]
+                document.querySelector('bt h1').innerHTML=hd[i]
+                document.querySelector('.bt p').innerHTML=d[i]
+                cr[i].className='fa-solid fa-circle'
+            }
+            function decr()
+            {
+                cr[i].className='fa-regular fa-circle'
+                i--
+                if(i<0)
+                {
+                    i=2
+                }
+                document.getElementsByTagName("img")[1].src=arr[i]
+                document.querySelector('bt h1').innerHTML=hd[i]
+                document.querySelector('.bt p').innerHTML=d[i]
+                cr[i].className='fa-solid fa-circle'
+            }
+            function fun1(e)
+            {
+                cr[i].className='fa-regular fa-circle'
+                document.getElementsByTagName("img")[0].src=arr[e]
+                i=e
+                document.querySelector('bt h1').innerHTML=hd[i]
+                document.querySelector('.bt p').innerHTML=d[i]
+                cr[i].className='fa-solid fa-circle'
+            }
+            setInterval(incr,5000)
+        </script>
+        <div class="info">
+            <img src="https://www.saveetha.ac.in/images/sec/2020/content/vision01.jpg"/>
+            <div>
+                <p class="p1">Get the opportunity to experience Next Generation SOS system at first. 200 users will be selected as a beta Tester on a first serve basis.Testing will be done in 8 phases.Each <br> phase's duration will be 7days and there will be 200 testers.</p>
+                <p class="p2">Get the opportunity to done in 8 phases.Each phase's duration will be 7 days and there will be 200 Testers.</p>
+                <p class="p3">get the opportunity to done in 8 phases.each phase's duration will be 7 days and there will <br> be 200 Testers</p>
+            </div>
+        </div>
+        <footer>
+            <ul>KNOWN US
+                <div class="line"></div>
+                   <li>&gt;&nbsp;&nbsp;&nbsp;<a href="index.html">Home</a></li>
+                    <li>&gt;&nbsp;&nbsp;&nbsp;<a href="About.html">About Us</a></li>
+                    <li>&gt;&nbsp;&nbsp;&nbsp;<a href="Blog.html">Blog</a></li>
+            </ul>
+            <ul>USEFULL LINKS
+                <div class="line"></div>
+                <li>&gt;&nbsp;&nbsp;&nbsp;<a href="Career.html">Career</a></li>
+                <li>&gt;&nbsp;&nbsp;&nbsp;<a href="Directors.html">Directors</a></li>
+                <li>&gt;&nbsp;&nbsp;&nbsp;<a href="Statistics.html">Statistics</a></li>
+                <li>&gt;&nbsp;&nbsp;&nbsp;<a href="#">Privacy</a></li>
+                <li>&gt;&nbsp;&nbsp;&nbsp;<a href="#">Terms And Condition</a></li>
+            </ul>
+            <ul>CONTACT US
+                <div class="line"></div>
+                <li><h4>Address : </h4>
+                    #68 2nd cross,Muniramappa layout,Geddalahalli,Bengaluru,<br>KA 560094    
+                </li>
+                <li><h4>Email : </h4>
+                    sicu.aura.official.com
+                </li>
+                <li><h4>Contact Number : </h4>
+                    +91-9876543210 / 2435-9876
+                </li>
+            </ul>
+            <ul>SUBSCRPTION
+                <div class="line"></div>
+                <li>With our skills put together, You Get an Ensemble capable of doing anything and everything the brand needs.Follow us to Get our latest updates.</li>
+                <li><input type="text" placeholder="Enter Your Email"/>
+                <button>Subscribe</button></li>
+            </ul>
+            </ul>   
+            <p>*Terms and Condition Applied*|Copyright &copy; 2023 Sicu-Aura.All rights Reserved.</p>
+            <div class="icons">
+                <p>Follow Us</p>
+                <div class="line"></div>
+                <a href="https://www.facebook.com/people/Sicu-aura/100092369332099/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/SicuAura"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/sicu-aura/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/dream_is_live_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.google.com/search?q=sicu-aura&oq=sicu-aura&aqs=chrome.0.69i59l2j69i60l2j69i61j69i65.3431j0j1&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
